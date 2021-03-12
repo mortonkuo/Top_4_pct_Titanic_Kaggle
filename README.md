@@ -2,12 +2,13 @@
 Top 4 % in ***Titanic: Machine Learning from Disaster***, a renowned competition on Kaggle, in 2020/05. 
 
 
-# 1. Ranking 
+## 1. Ranking 
 
-![titanicLeaderBoard01](Top_4_pct_Titanic_01.png)
-![titanicLeaderBoard02](Top_4_pct_Titanic_02.png)
+![titanicLeaderBoard01](Top_4_pct_Titanic_01.png){:height="50%" width="50%"}
+![titanicLeaderBoard02](Top_4_pct_Titanic_02.png){:height="700px" width="400px"}
 
-## Titanic: Machine Learning from Disaster
+
+## 2. Dataset—Titanic: Machine Learning from Disaster
 
 Start here! Predict survival on the Titanic and get familiar with Machine Learning basics
 
