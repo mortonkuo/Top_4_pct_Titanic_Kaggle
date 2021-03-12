@@ -7,7 +7,8 @@ Top 4 % in Titanic, a renowned competition on Kaggle.
 ### Name: Morton Kuo (郭育丞)
 ### Student ID: 107363015
 Remark: The intro of this assignment doesn't explain some detail, so I mistook the two terms "--report performance.csv" & "--predict predict.csv". I updated the R code "hw5_107363015_v2" that "only" revised this mistake. 
-![titanicLeaderBoard](Top_4_pct_Titanic_01.png)
+![titanicLeaderBoard01](Top_4_pct_Titanic_01.png)
+![titanicLeaderBoard02](Top_4_pct_Titanic_02.png)
 
 ## Titanic: Machine Learning from Disaster
 
