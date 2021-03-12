@@ -1,5 +1,5 @@
 # Top_4_pct_Titanic_Kaggle
-Top 4 % in "Titanic: Machine Learning from Disaster", a renowned competition on Kaggle, in 2020/05. 
+Top 4 % in *Titanic: Machine Learning from Disaster*, a renowned competition on Kaggle, in 2020/05. 
 
 
 # 1. Ranking 
