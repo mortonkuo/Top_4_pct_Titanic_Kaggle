@@ -17,7 +17,8 @@ Top 4 % (833/22219) in ***Titanic: Machine Learning from Disaster***, a renowned
 
 I got a accuracy 0.89 using Random Forest with 10-fold and 3-way validation.
 
-![outcome](Top_4_pct_Titanic_02.png)
+![outcome](Top_4_pct_Titanic_03.png)
+Run the following snippet in "Terminal" of *RStudio* to get the outcome.
 ```R
 Rscript Titanic_Kaggle_Morton_Kuo.R --fold 5 --train Titanic_Data/train.csv --test Titanic_Data/test.csv --report performance1.csv --predict predict.csv
 ...
