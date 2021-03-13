@@ -13,7 +13,7 @@ The Titanic dataset here is retrieved from Kaggle in 2020/05. Notice that **the 
 
 ## 3. Steps
 
-1. Performing **10-fold** cross-validation on the *training data given by Kaggle* under **3-way** split to select the best prediction model.
+1. Performing **10-fold** cross-validation under **3-way** split to select the best prediction model. (Doing k-fold CV in training data given by Kaggle.)
 2. Reporting the average accuracy of cross-validation (training, validation, test in *n*-fold cross-validation).
 3. Applying the selected model on the test data.
 
@@ -38,7 +38,7 @@ Top 4% (833/22219) and a 0.81339 accuracy on public leaderboard in 2020/05. Howe
 ### 6-1 Introduction to Features
 
 ![Features](Top_4_pct_Titanic_04.png) \
-This snapshot was taken in 2021/03. The feature "Name" has been deleted at this point. 
+This snapshot was taken in 2021/03. The feature "Name" has been deleted at this point. Amid these 10 variables, "survival" is the target and the rest 9 variables are all featrues. So I had 10 features at the time (2020/05) I did this analysis. 
 
 ### 6-2 Missing Value Imputation
 ```R
@@ -49,13 +49,19 @@ mice.data <- mice(Raw,
                   seed = 188,
                   print=FALSE)     
 ```
+I imputed 7 features (Sex, Age, SibSp, Parch, Fare, Pclass, Embarked), leaving the left 3 features (Name, Ticket, Cabin) remained. "Name" & "Ticket" don't have any missing value but "Cabin" possesses lots of missing value. We will tackle with "Cabin" in 6-3.
 
-Actually, I made mistake called **"data leakage"**, a common mistake in DS & ML projects, while imputing the missing values. I merged the training, validation and test dataset, then imputing this merged dataset by Random Forest using mice(). I should have imputed the missing values of training, validation and test dataset respectively! This mistake might have caused overfitting.
+Actually, I made mistake called **"data leakage"**, a common mistake in DS & ML projects, while imputing the missing values. I merged the training and test dataset given by Kaggle, then imputing this merged dataset by Random Forest using mice(). I should have imputed the missing values of training and test dataset respectively! This mistake might have caused overfitting.
 
-### 6-3 Preprocessing
+### 6-3 Transforming Features
+
+Total 10 features.
 
 #### 6-3-1 Name
-Again, notice that this feature doesn't exist in Titanic dataset on Kaggle anymore. Yet it existed in 2020/05, the time I carrying out this analysis. According to a resource on Kaggle, I categorized the titles as followed:\
+```R
+table(Survived_train , Titanic$Title[1:891])
+```
+Again, notice that this feature doesn't exist in Titanic dataset on Kaggle anymore. Yet it existed in 2020/05, the time I carrying out this analysis. According to a resource on Kaggle, I extracted the title of "Name" only. Then, I observed the cross table of "Survival" & "Title", and categorized "Title" as followed:\
 
 A. "RARE" : "Jonkheer.", "the", "Don.", "Dona.", "Sir.", "Lady.", "Mme."\
 B. "Prof": "Dr.", "Rev.", "Capt.", "Major.", "Col."\
@@ -65,25 +71,51 @@ E. "Mrs":"Mrs.", "Ms."\
 F. "Miss": "Miss.", "Mlle."\
 
 #### 6-3-2 Sex
+No change.
+
+#### 6-3-3 Age
+No change.
+
+#### 6-3-4 SibSp & Parch
+```R
+Titanic_temp$Family_size = (Titanic_temp$SibSp + Titanic_temp$Parch +1 )
+table(Survived_train, Titanic_temp$Family_size[1:891])
+
+Titanic_temp$Family_size [ Titanic_temp$Family_size == 11 ] = "D"
+Titanic_temp$Family_size [ Titanic_temp$Family_size == 8 ] = "D"
+Titanic_temp$Family_size [ Titanic_temp$Family_size == 7 ] = "C"
+Titanic_temp$Family_size [ Titanic_temp$Family_size == 6 ] = "C"
+Titanic_temp$Family_size [ Titanic_temp$Family_size == 5 ] = "C"
+
+Titanic_temp$Family_size [ Titanic_temp$Family_size == 4 ] = "B"
+Titanic_temp$Family_size [ Titanic_temp$Family_size == 3 ] = "B"
+Titanic_temp$Family_size [ Titanic_temp$Family_size == 2 ] = "B"
+
+Titanic_temp$Family_size [ Titanic_temp$Family_size == 1 ] = "A"
+```
+Creating a new features combining "SibSp" & "Parch". Then classifying them into 4 categories referring to the cross table of "Survival" & "Family_size".
 
 
-#### 6-3-3 SibSp & Parch
-
-
-#### 6-3-4 Ticket
+#### 6-3-5 Ticket
 After observing the cross-table of "the first alphabet of ticket" & "survival",  I classified the ticket numbers into 2 categories.
 
-#### 6-3-5 Fare
+#### 6-3-6 Fare
+No change.
 
-#### 6-3-6 Pclass
+#### 6-3-7 Pclass
+No change.
 
-#### 6-3-7 Cabin
+#### 6-3-8 Cabin
+```R
+table(Survived_train, cabin02[1:891])
+```
+By obeserving the cross-table, I categorized "Cabin" into 2 category, making NAs into a category and made the rest non-NA elements into another.
 
-#### 6-3-8 Embarked
-
+#### 6-3-9 Embarked
+No change.
 
 ### 6-4 Feature Selection / Feature Extraction
-By leveraging stepwise linear regression with higher degree terms & interactions (using *stepwise()*), I was able to choose a few influential features.
+Leveraging stepwise linear regression with higher degree terms & interactions (using *stepwise()*), I was able to choose a few influential features.
 
 ### 6-5 Models
 Then, I input those influential features to models, and tried combinations of those features in every model. The models I tried ranging from Linear Regression, SVM, Random Forest, XGBoost to ANN. Ultimately, I found that Ramdom Forest yielded the best outcome.
