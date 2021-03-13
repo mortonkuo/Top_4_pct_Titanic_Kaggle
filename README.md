@@ -61,14 +61,14 @@ Total 10 features.
 ```R
 table(Survived_train , Titanic$Title[1:891])
 ```
-Again, notice that this feature doesn't exist in Titanic dataset on Kaggle anymore. Yet it existed in 2020/05, the time I carrying out this analysis. According to a resource on Kaggle, I extracted the title of "Name" only. Then, I observed the cross table of "Survival" & "Title", and categorized "Title" as followed:\
+Again, notice that this feature doesn't exist in Titanic dataset on Kaggle anymore. Yet it existed in 2020/05, the time I carrying out this analysis. According to a resource on Kaggle, I extracted the title of "Name" only. Then, I observed the cross table of "Survival" & "Title", and categorized "Title" as followed:
 
 A. "RARE" : "Jonkheer.", "the", "Don.", "Dona.", "Sir.", "Lady.", "Mme."\
 B. "Prof": "Dr.", "Rev.", "Capt.", "Major.", "Col."\
 C. "Mr": "Mr."\
 D. "Master": "Master."\
 E. "Mrs":"Mrs.", "Ms."\
-F. "Miss": "Miss.", "Mlle."\
+F. "Miss": "Miss.", "Mlle."
 
 #### 6-3-2 Sex
 No change.
