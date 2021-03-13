@@ -35,14 +35,26 @@ Top 4% (833/22219) and a 0.81339 accuracy on public leaderboard in 2020/05. Howe
 
 ## 6. Details
 
-### 6-1 Preprocessing
+### 6-1 Missing Value Imputation
 
-#### 6-1-1 
+### 6-2 Preprocessing
 
-### 6-2 Feature Selection / Feature Extraction
+(photo)
+
+#### 6-2-1 Name
+#### 6-2-2 Sex
+#### 6-2-3 SibSp & Parch
+#### 6-2-4 Ticket
+#### 6-2-5 Fare
+#### 6-2-6 Pclass
+#### 6-2-7 Cabin
+#### 6-2-8 Embarked
+
+
+### 6-3 Feature Selection / Feature Extraction
 By leveraging stepwise linear regression with higher degree terms & interactions, I was able to choose a few influential features.
 
-### 6-3 Models
+### 6-4 Models
 Then, I input those influential features to models, and tried combinations of those features in every model. The models I tried ranging from Linear Regression, SVM, Random Forest, XGBoost to ANN. Ultimately, I found that Ramdom Forest yielded the best outcome.
 
 Here are a couple of best models I came by. Note that I didn't even adopt emsemble learning but already got a satisfactory ranking. 
