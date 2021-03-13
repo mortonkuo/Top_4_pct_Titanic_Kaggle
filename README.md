@@ -9,7 +9,7 @@ Top 4 % (833/22219) in ***Titanic: Machine Learning from Disaster***, a renowned
 
 ## 2. Dataset
 
-The Titanic dataset here is retrieved from Kaggle in 2020/05. Notice that the Titanic dataset has changed now, so my top 4% ranking in Titanic disappeared. Kaggle **deleted the feature "Name"**, probably for *preventing cheating*, and resampled to get the new data. 
+The Titanic dataset here is retrieved from Kaggle in 2020/05. Notice that the Titanic dataset has changed now, so my top 4% ranking in Titanic disappeared. Kaggle **deleted the feature "Name"**, probably for **preventing cheating**, and resampled to get the new data. 
 
 
 ## 3. Steps
