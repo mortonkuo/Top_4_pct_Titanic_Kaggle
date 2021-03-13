@@ -37,20 +37,30 @@ Top 4% (833/22219) and a 0.81339 accuracy on public leaderboard in 2020/05. Howe
 
 ### 6-1 Introduction to Features
 
+![Features](Top_4_pct_Titanic_04.png) \
+This snapshot was taken in 2021/03. The feature "Name" has been deleted at this point. 
 
 ### 6-2 Missing Value Imputation
 
+Actually, I made mistake called **"data leakage"**, a common mistake in DS & ML projects, while imputing the missing values. I merged the training, validation and test dataset, then imputing this merged dataset by Random Forest using mice(). I should have imputed the missing values of training, validation and test dataset respectively! This mistake might have caused overfitting.
+
 ### 6-3 Preprocessing
 
-(photo)
-
 #### 6-3-1 Name
+Again, notice that this feature isn't exist in Titanic dataset on Kaggle anymore. Yet it existed in 2020/05, the time I carrying out this analysis.
+
 #### 6-3-2 Sex
+
 #### 6-3-3 SibSp & Parch
+
 #### 6-3-4 Ticket
+
 #### 6-3-5 Fare
+
 #### 6-3-6 Pclass
+
 #### 6-3-7 Cabin
+
 #### 6-3-8 Embarked
 
 
