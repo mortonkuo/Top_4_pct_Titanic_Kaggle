@@ -9,7 +9,7 @@ Top 4 % (833/22219) in ***Titanic: Machine Learning from Disaster***, a renowned
 
 ## 2. Dataset
 
-The ***Titanic: Machine Learning from Disaster*** dataset here is retrieved from Kaggle in 2020/05. Notice that the Titanic dataset has changed now, so my top 4% ranking in Titanic disappeared. Kaggle *deleted the feature "Name"*, probably for preventing cheating, and resampled to get the new data. 
+The Titanic dataset here is retrieved from Kaggle in 2020/05. Notice that the Titanic dataset has changed now, so my top 4% ranking in Titanic disappeared. Kaggle *deleted the feature "Name"*, probably for preventing cheating, and resampled to get the new data. 
 
 
 ## 3. Steps
@@ -32,6 +32,4 @@ Rscript Titanic_Kaggle_Morton_Kuo.R --fold 10 --train Titanic_Data/train.csv --t
 
 ## 5. The public leaderboard ranking and score on Kaggle
 
-Top 4% (833/22219) and 0.81339 accuracy on public leaderboard in 2020/05. 
-
-However, you CAN'T get high ranking and score merely submitting my result since the data of ***Titanic: Machine Learning from Disaster*** has changed.
+Top 4% (833/22219) and 0.81339 accuracy on public leaderboard in 2020/05. However, you CAN'T get high ranking and score merely submitting my result since the Titanic dataset has changed.
