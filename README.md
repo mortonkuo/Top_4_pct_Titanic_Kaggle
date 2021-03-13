@@ -41,19 +41,37 @@ Top 4% (833/22219) and a 0.81339 accuracy on public leaderboard in 2020/05. Howe
 This snapshot was taken in 2021/03. The feature "Name" has been deleted at this point. 
 
 ### 6-2 Missing Value Imputation
+```R
+mice.data <- mice(Raw,
+                  m = 1,            
+                  maxit = 50,      # max iteration
+                  method = "rf", 
+                  seed = 188,
+                  print=FALSE)     
+```
 
 Actually, I made mistake called **"data leakage"**, a common mistake in DS & ML projects, while imputing the missing values. I merged the training, validation and test dataset, then imputing this merged dataset by Random Forest using mice(). I should have imputed the missing values of training, validation and test dataset respectively! This mistake might have caused overfitting.
 
 ### 6-3 Preprocessing
 
 #### 6-3-1 Name
-Again, notice that this feature isn't exist in Titanic dataset on Kaggle anymore. Yet it existed in 2020/05, the time I carrying out this analysis.
+Again, notice that this feature doesn't exist in Titanic dataset on Kaggle anymore. Yet it existed in 2020/05, the time I carrying out this analysis. According to a resource on Kaggle, I categorized the titles as followed:
+
+A. "RARE" : "Jonkheer.", "the", "Don.", "Dona.", "Sir.", "Lady.", "Mme."
+B. "Prof": "Dr.", "Rev.", "Capt.", "Major.", "Col."
+C. "Mr": "Mr."
+D. "Master": "Master."
+E. "Mrs":"Mrs.", "Ms."
+F. "Miss": "Miss.", "Mlle."
 
 #### 6-3-2 Sex
 
+
 #### 6-3-3 SibSp & Parch
 
+
 #### 6-3-4 Ticket
+After observing the cross-table of "the first alphabet of ticket" & "survival",  I classified the ticket numbers into 2 categories.
 
 #### 6-3-5 Fare
 
