@@ -43,7 +43,7 @@ Rscript Titanic_Kaggle_Morton_Kuo.R --fold 10 --train Titanic_Data/train.csv --t
 
 ## 5. The Public Leaderboard Ranking and Score on Kaggle
 
-Top 4% (833/22219) and a 0.81339 accuracy on public leaderboard in 2020/05. However, you CAN'T get high ranking and score merely submitting my result since the Titanic dataset has changed.
+Top 4% (833/22219) and a 0.81339 accuracy on public leaderboard in 2020/05. However, you CAN'T get exactly the same public leaderboard score merely submitting my result since the Titanic dataset has changed.
 
 ## 6. Details
 
