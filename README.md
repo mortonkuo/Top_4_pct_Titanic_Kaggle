@@ -115,7 +115,7 @@ By obeserving the cross-table, I categorized "Cabin" into 2 category, making NAs
 No change.
 
 ### 6-4 Feature Selection / Feature Extraction
-Leveraging stepwise linear regression with higher degree terms & interactions (using *stepwise()*), I was able to choose a few influential features.
+Leveraging stepwise linear regression with higher degree terms & interactions (using *stepwise( )*), I was able to choose a few influential features.
 
 ### 6-5 Model Selection
 Then, I input those influential features to models, and tried combinations of those features in every model. The models I tried ranging from Naive Bayes, Linear Regression, SVM, Random Forest, XGBoost to Neural Network. Ultimately, I found that Ramdom Forest yielded the best outcome.
