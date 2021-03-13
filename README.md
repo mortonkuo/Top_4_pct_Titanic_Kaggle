@@ -14,7 +14,7 @@ The Titanic dataset here is retrieved from Kaggle in 2020/05. Notice that the Ti
 
 ## 3. Steps
 
-1. Performing **10-fold** cross-validation on the training data under **3-way** split to select the best prediction model.
+1. Performing **10-fold** cross-validation on the training data given by Kaggle under **3-way** split to select the best prediction model.
 2. Reporting the average accuracy of cross-validation (training, validation, test in *n*-fold cross-validation).
 3. Applying the selected model on the test data.
 
