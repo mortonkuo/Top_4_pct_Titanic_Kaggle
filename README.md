@@ -55,14 +55,14 @@ Actually, I made mistake called **"data leakage"**, a common mistake in DS & ML 
 ### 6-3 Preprocessing
 
 #### 6-3-1 Name
-Again, notice that this feature doesn't exist in Titanic dataset on Kaggle anymore. Yet it existed in 2020/05, the time I carrying out this analysis. According to a resource on Kaggle, I categorized the titles as followed:
+Again, notice that this feature doesn't exist in Titanic dataset on Kaggle anymore. Yet it existed in 2020/05, the time I carrying out this analysis. According to a resource on Kaggle, I categorized the titles as followed:\
 
-A. "RARE" : "Jonkheer.", "the", "Don.", "Dona.", "Sir.", "Lady.", "Mme."
-B. "Prof": "Dr.", "Rev.", "Capt.", "Major.", "Col."
-C. "Mr": "Mr."
-D. "Master": "Master."
-E. "Mrs":"Mrs.", "Ms."
-F. "Miss": "Miss.", "Mlle."
+A. "RARE" : "Jonkheer.", "the", "Don.", "Dona.", "Sir.", "Lady.", "Mme."\
+B. "Prof": "Dr.", "Rev.", "Capt.", "Major.", "Col."\
+C. "Mr": "Mr."\
+D. "Master": "Master."\
+E. "Mrs":"Mrs.", "Ms."\
+F. "Miss": "Miss.", "Mlle."\
 
 #### 6-3-2 Sex
 
