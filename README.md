@@ -34,4 +34,4 @@ Rscript Titanic_Kaggle_Morton_Kuo.R --fold 10 --train Titanic_Data/train.csv --t
 
 Top 4% (833/22219) and 0.81339 accuracy in 2020/05. 
 
-However, you CAN'T get high ranking and score merely submitting my result since the data of ***Titanic: Machine Learning from Disaster*** has changed. Kaggle deleted the feature "Name", probably for preventing cheating, and resampled to get the new data. 
+However, you CAN'T get high ranking and score merely submitting my result since the data of ***Titanic: Machine Learning from Disaster*** has changed.
