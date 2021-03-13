@@ -1,5 +1,5 @@
 # Top_4_pct_Titanic_Kaggle
-Top 4 % (833/22219) in ***Titanic: Machine Learning from Disaster***, a renowned competition on Kaggle, in 2020/05. 
+Top 4 % (833/22219) in ***[Titanic: Machine Learning from Disaster](https://www.kaggle.com/c/titanic)***, a renowned competition on Kaggle, in 2020/05.
 
 
 ## 1. Ranking 
@@ -10,7 +10,6 @@ Top 4 % (833/22219) in ***Titanic: Machine Learning from Disaster***, a renowned
 ## 2. Dataset
 
 The Titanic dataset here is retrieved from Kaggle in 2020/05. Notice that **the Titanic dataset has changed now**, so my top 4% ranking in Titanic disappeared. Kaggle ***deleted the feature "Name"***, probably for ***preventing cheating***, and resampled to get the new data. 
-
 
 ## 3. Steps
 
@@ -36,10 +35,13 @@ Top 4% (833/22219) and a 0.81339 accuracy on public leaderboard in 2020/05. Howe
 
 ## 6. Details
 
-### 6-1 
+
+
+
+### 6-? Best Models
 Here are a couple of best models I came by.
 ```R
-fold1_rf = randomForest( Survived ~ Title + Family_size:Sex_Survival + Fare + Embarked , data= Titanic_train , ntree = 1000, importance = F)
+fold1_rf   = randomForest( Survived ~ Title + Family_size:Sex_Survival + Fare + Embarked , data= Titanic_train , ntree = 1000, importance = F)
 fold1_rf01 = randomForest( Survived ~ Title + Family_size:Sex_Survival + Fare + Embarked , data=Titanic_train , ntree = 1000, importance = F)
 fold1_rf02 = randomForest( Survived ~ Title + Family_size:Sex_Survival + Fare:Age + Embarked + Ticket_02 , data=Titanic_train , ntree = 1000, importance = F)
 ```
