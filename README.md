@@ -52,7 +52,7 @@ Top 4% (833/22219) and a 0.81339 accuracy on public leaderboard in 2020/05. Howe
 
 
 ### 6-3 Feature Selection / Feature Extraction
-By leveraging stepwise linear regression with higher degree terms & interactions, I was able to choose a few influential features.
+By leveraging stepwise linear regression with higher degree terms & interactions (using *stepwise()*), I was able to choose a few influential features.
 
 ### 6-4 Models
 Then, I input those influential features to models, and tried combinations of those features in every model. The models I tried ranging from Linear Regression, SVM, Random Forest, XGBoost to ANN. Ultimately, I found that Ramdom Forest yielded the best outcome.
