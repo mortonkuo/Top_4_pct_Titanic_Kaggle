@@ -2,12 +2,12 @@
 Top 4 % (833/22219) in **[Titanic: Machine Learning from Disaster](https://www.kaggle.com/c/titanic)**, a renowned competition on Kaggle, in 2020/05. This analysis is ***conducted with R***.
 
 ## Outline
-(1) Ranking 
-(2) Dataset
-(3) Steps
-(4) Reproducing Outcome on Training Data Given by Kaggle
-(5) The Public Leaderboard Ranking and Score on Kaggle
-(6) Details \
+1. Ranking 
+2. Dataset
+3. Steps
+4. Reproducing Outcome on Training Data Given by Kaggle
+5. The Public Leaderboard Ranking and Score on Kaggle
+6. Details \
 *6-1 Introduction to Features \
 *6-2 Missing Value Imputation \
 *6-3 Features Transformation \
