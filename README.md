@@ -20,7 +20,7 @@ The Titanic dataset here is retrieved from Kaggle in 2020/05. Notice that the Ti
 
 ## 4. Reproducing outcome on training, validation & test data
 
-I got a 0.89 accuracy using Random Forest with 10-fold and 3-way validation on the whole training data given by Kaggle.
+I got a 0.89 accuracy on test data using Random Forest with 10-fold and 3-way validation on the whole training data given by Kaggle.
 
 ![outcome](Top_4_pct_Titanic_03.png) \
 Run the following snippet in "Terminal" of *RStudio* to get the outcome.
@@ -32,4 +32,4 @@ Rscript Titanic_Kaggle_Morton_Kuo.R --fold 10 --train Titanic_Data/train.csv --t
 
 ## 5. The public leaderboard ranking and score on Kaggle
 
-Top 4% (833/22219) and 0.81339 accuracy on public leaderboard in 2020/05. However, you CAN'T get high ranking and score merely submitting my result since the Titanic dataset has changed.
+Top 4% (833/22219) and a 0.81339 accuracy on public leaderboard in 2020/05. However, you CAN'T get high ranking and score merely submitting my result since the Titanic dataset has changed.
