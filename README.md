@@ -53,7 +53,7 @@ I imputed 7 features (Sex, Age, SibSp, Parch, Fare, Pclass, Embarked), leaving t
 
 Actually, I made mistake called **"data leakage"**, a common mistake in DS & ML projects, while imputing the missing values. I merged the training and test dataset given by Kaggle, then imputing this merged dataset by Random Forest using mice(). I should have imputed the missing values of training and test dataset respectively! This mistake might have caused overfitting.
 
-### 6-3 Transforming Features
+### 6-3 Features Transformation
 
 Total 10 features.
 
