@@ -4,7 +4,8 @@ Top 4 % in ***Titanic: Machine Learning from Disaster***, a renowned competition
 
 ## 1. Ranking 
 
-
+![titanicLeaderBoard01](Top_4_pct_Titanic_01.png)
+![titanicLeaderBoard02](Top_4_pct_Titanic_02.png)
 
 ## 2. Dataset—Titanic: Machine Learning from Disaster
 
