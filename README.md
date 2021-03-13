@@ -118,7 +118,7 @@ No change.
 Leveraging stepwise linear regression with higher degree terms & interactions (using *stepwise( )*), I was able to choose a few influential features.
 
 ### 6-5 Model Selection
-Then, I input those influential features to models, and tried combinations of those features in every model. The models I tried ranging from Naive Bayes, Linear Regression, SVM, Random Forest, XGBoost to Neural Network. Ultimately, I found that Ramdom Forest yielded the best outcome.
+Then, I input those influential features to models, and tried combinations of those features in every model. The models I tried ranging from Naive Bayes, Linear Regression, SVM, Random Forest, XGBoost to Neural Network. Ultimately, I found that Ramdom Forest yielded the best results.
 
 Here are a couple of best models I came by. Note that I ***didn't even adopt emsemble learning*** but already got a satisfactory top 4% (833/22219) ranking. 
 ```R
