@@ -120,7 +120,7 @@ Leveraging stepwise linear regression with higher degree terms & interactions (u
 ### 6-5 Models
 Then, I input those influential features to models, and tried combinations of those features in every model. The models I tried ranging from Naive Bayes, Linear Regression, SVM, Random Forest, XGBoost to Neural Network. Ultimately, I found that Ramdom Forest yielded the best outcome.
 
-Here are a couple of best models I came by. Note that I ***didn't even adopt emsemble learning*** but already got a satisfactory ranking. 
+Here are a couple of best models I came by. Note that I ***didn't even adopt emsemble learning*** but already got a satisfactory top 4% ranking. 
 ```R
 fold1_rf   = randomForest( Survived ~ Title + Family_size:Sex_Survival + Fare + Embarked , data= Titanic_train , ntree = 1000, importance = F)
 fold1_rf01 = randomForest( Survived ~ Title + Family_size:Sex_Survival + Fare + Embarked , data=Titanic_train , ntree = 1000, importance = F)
