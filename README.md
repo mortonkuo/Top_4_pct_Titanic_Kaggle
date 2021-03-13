@@ -13,7 +13,7 @@ Top 4 % in ***Titanic: Machine Learning from Disaster***, a renowned competition
 2. Reporting the average accuracy of cross-validation (training, validation, test in *n*-fold cross-validation).
 3. Applying the selected model on the test data.
 
-## 3. Reproducing outcome on training & validation data
+## 3. Reproducing outcome on training, validation & test data
 
 ```R
 Rscript Titanic_Kaggle_Morton_Kuo.R --fold 5 --train Titanic_Data/train.csv --test Titanic_Data/test.csv --report performance1.csv --predict predict.csv
