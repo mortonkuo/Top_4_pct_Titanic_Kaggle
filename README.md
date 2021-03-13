@@ -9,7 +9,7 @@ Top 4 % (833/22219) in ***Titanic: Machine Learning from Disaster***, a renowned
 
 ## 2. Dataset
 
-The Titanic dataset here is retrieved from Kaggle in 2020/05. Notice that the Titanic dataset has changed now, so my top 4% ranking in Titanic disappeared. Kaggle *deleted the feature "Name"*, probably for preventing cheating, and resampled to get the new data. 
+The ***Titanic: Machine Learning from Disaster*** dataset here is retrieved from Kaggle in 2020/05. Notice that the Titanic dataset has changed now, so my top 4% ranking in Titanic disappeared. Kaggle *deleted the feature "Name"*, probably for preventing cheating, and resampled to get the new data. 
 
 
 ## 3. Steps
@@ -22,8 +22,8 @@ The Titanic dataset here is retrieved from Kaggle in 2020/05. Notice that the Ti
 
 I got a 0.89 accuracy using Random Forest with 10-fold and 3-way validation on the whole training data given by Kaggle
 
-![outcome](Top_4_pct_Titanic_03.png)
-\ Run the following snippet in "Terminal" of *RStudio* to get the outcome.
+![outcome](Top_4_pct_Titanic_03.png) \
+Run the following snippet in "Terminal" of *RStudio* to get the outcome.
 ```R
 Rscript Titanic_Kaggle_Morton_Kuo.R --fold 5 --train Titanic_Data/train.csv --test Titanic_Data/test.csv --report performance1.csv --predict predict.csv
 ...
