@@ -9,7 +9,7 @@ Top 4 % (833/22219) in **[Titanic: Machine Learning from Disaster](https://www.k
 5. The Public Leaderboard Ranking and Score on Kaggle
 6. Details \
 *6-1 Introduction to Features \
-*6-2 Missing Value Imputation \
+*6-2 Missing Values Imputation \
 *6-3 Features Transformation \
 *6-4 Feature Selection / Feature Extraction \
 *6-5 Model Selection 
@@ -52,7 +52,7 @@ Top 4% (833/22219) and a 0.81339 accuracy on public leaderboard in 2020/05. Howe
 ![Features](Top_4_pct_Titanic_04.png) \
 This snapshot was taken in 2021/03. The feature "Name" has been deleted at this point. Amid these 10 variables, "survival" is the target and the rest 9 variables are all featrues. So I had 10 features at the time (2020/05) I did this analysis. 
 
-### 6-2 Missing Value Imputation
+### 6-2 Missing Values Imputation
 ```R
 mice.data <- mice(Raw,
                   m = 1,            
@@ -61,7 +61,7 @@ mice.data <- mice(Raw,
                   seed = 188,
                   print=FALSE)     
 ```
-I imputed 7 features (Sex, Age, SibSp, Parch, Fare, Pclass, Embarked), leaving the left 3 features (Name, Ticket, Cabin) remained. "Name" & "Ticket" don't have any missing value but "Cabin" possesses lots of missing value. We will tackle with "Cabin" in 6-3.
+I imputed 7 features (Sex, Age, SibSp, Parch, Fare, Pclass, Embarked), leaving the left 3 features (Name, Ticket, Cabin) remained. "Name" & "Ticket" don't have any missing values but "Cabin" possesses lots of missing values. We will tackle with "Cabin" in 6-3.
 
 Actually, I made mistake called **"data leakage"**, a common mistake in DS & ML projects, while imputing the missing values. I merged the training and test dataset given by Kaggle, then imputing this merged dataset by Random Forest using mice(). I should have imputed the missing values of training and test dataset respectively! This mistake might have caused overfitting.
 
