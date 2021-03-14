@@ -45,7 +45,7 @@ Rscript Titanic_Kaggle_Morton_Kuo.R --fold 10 --train Titanic_Data/train.csv --t
 
 Top 4% (833/22219) and a 0.81339 accuracy on public leaderboard in 2020/05. However, you CAN'T get exactly the same public leaderboard score merely submitting my result since the Titanic dataset has changed.
 
-## 6. Details
+## 6. Detail
 
 ### 6-1 Introduction to Features
 
