@@ -31,7 +31,7 @@ The Titanic dataset here is retrieved from Kaggle in 2020/05. Notice that **the 
 
 ## 4. Reproducing Outcome on Training Data Given by Kaggle
 
-I got a 0.89 accuracy on test data using **Random Forest** with 10-fold and 3-way validation.
+I got a 0.89 accuracy on test data using **Random Forest** with 10-fold under 3-way split.
 
 ![outcome](Top_4_pct_Titanic_03.png) \
 Run the following snippet in "Terminal" of *RStudio* to get the outcome.
