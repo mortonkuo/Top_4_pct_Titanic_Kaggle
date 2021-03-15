@@ -9,10 +9,10 @@ Top 4 % (833/22219) in **[Titanic: Machine Learning from Disaster](https://www.k
 5. The Public Leaderboard Ranking and Score on Kaggle
 6. Details \
 6-1 Introduction to Features \
-* 6-2 Missing Value Imputation \
-* 6-3 Features Transformation \
-* 6-4 Feature Extraction \
-* 6-5 Model Selection 
+6-2 Missing Value Imputation \
+6-3 Features Transformation \
+6-4 Feature Extraction \
+6-5 Model Selection 
 
 ## 1. Ranking 
 
