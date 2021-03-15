@@ -11,7 +11,7 @@ Top 4 % (833/22219) in **[Titanic: Machine Learning from Disaster](https://www.k
 *6-1 Introduction to Features \
 *6-2 Missing Values Imputation \
 *6-3 Features Transformation \
-*6-4 Feature Selection / Feature Extraction \
+*6-4 Feature Extraction \
 *6-5 Model Selection 
 
 ## 1. Ranking 
@@ -126,7 +126,7 @@ By obeserving the cross-table, I categorized "Cabin" into 2 category, making NAs
 #### 6-3-9 Embarked
 No change.
 
-### 6-4 Feature Selection / Feature Extraction
+### 6-4 Feature Extraction
 Leveraging stepwise linear regression with higher degree terms & interactions (using *stepwise( )*), I was able to choose a few influential features.
 
 ### 6-5 Model Selection
