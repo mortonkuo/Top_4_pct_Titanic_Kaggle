@@ -65,7 +65,7 @@ As a prominent procedure among preprocessing, missing value imputation is often 
 
 I imputed 7 features (Sex, Age, SibSp, Parch, Fare, Pclass, Embarked), leaving the left 3 features (Name, Ticket, Cabin) remained. "Name" & "Ticket" don't have any missing values but "Cabin" possesses lots of missing values. We will tackle with "Cabin" in 6-3.
 
-> Actually, I made mistake called **"data leakage"**, a common mistake in DS & ML projects, while imputing the missing values. I merged the training and test dataset given by Kaggle, then imputing this merged dataset by Random Forest using mice(). I should have imputed the missing values of training and test dataset respectively! This mistake might have caused overfitting.
+> Actually, I made a mistake called **"data leakage"**, a common mistake in DS & ML projects, while imputing the missing values. I merged the training and test dataset given by Kaggle, then imputing this merged dataset by Random Forest using mice(). I should have imputed the missing values of training and test dataset respectively! This mistake might have caused overfitting.
 
 ### 6-3 Features Transformation
 
