@@ -131,7 +131,7 @@ No change.
 ### 6-4 Feature Extraction
 Leveraging stepwise linear regression with higher degree terms & interactions (using *stepwise( )*), I was able to choose a few influential features.
 
-I figured that *this part is probably the reason why I got top 4% ranking merely using one model*, Random Forest, without leveraging stacking. ***Putting the interactions into Random Forest***, a quite creative move, might have led to the success.
+I figured that ***this part is probably the reason why I got top 4% ranking merely using one model***, Random Forest, without leveraging stacking. *Putting the interactions into Random Forest*, a quite creative move, might have led to the success.
 
 ### 6-5 Model Selection
 Then, I input those influential features to models, and tried combinations of those features in every model. The models I tried ranging from Naive Bayes, Linear Regression, SVM, Random Forest, XGBoost to Neural Network. Ultimately, I found that Ramdom Forest yielded the best results.
