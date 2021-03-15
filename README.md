@@ -50,7 +50,7 @@ Top 4% (833/22219) and a 0.81339 accuracy on public leaderboard in 2020/05. Howe
 ### 6-1 Introduction to Features
 
 ![Features](Top_4_pct_Titanic_04.png) \
-This snapshot was taken in 2021/03. The feature "Name" has been deleted at this point. Amid these 10 variables, "survival" is the target and the rest 9 variables are all featrues. So I had 10 features at the time (2020/05) I did this analysis. 
+This snapshot was taken in 2021/03. The feature "Name" has been deleted at this point. Amid these 10 variables, "survival" is the target and the rest 9 variables are all features. So I had 10 features at the time (2020/05) I did this analysis. 
 
 ### 6-2 Missing Values Imputation
 ```R
