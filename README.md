@@ -1,5 +1,6 @@
 # Top-4-pct_Titanic_Kaggle
-Top 4 % (833/22219) in **[Titanic: Machine Learning from Disaster](https://www.kaggle.com/c/titanic)**, an iconic entry-level competition on Kaggle, in 2020/05. This analysis was ***conducted with R***.
+- Top 4 % (833/22219) in **[Titanic: Machine Learning from Disaster](https://www.kaggle.com/c/titanic)**, an iconic entry-level competition on Kaggle, in 2020/05. This project was ***conducted with R***.
+- 
 
 ## Outline
 1. Ranking 
@@ -50,7 +51,7 @@ Top 4% (833/22219) and a 0.81339 accuracy on public leaderboard in 2020/05. Howe
 ### 6-1 Introduction to Features
 
 ![Features](Top_4_pct_Titanic_04.png) \
-This snapshot was taken in 2021/03. The feature "Name" has been deleted at this point. Amid these 10 variables, "survival" is clearly the target and the rest 9 variables are all features. So I had 10 features at the time (2020/05) I did this analysis. 
+This snapshot was taken in 2021/03. The feature "Name" has been deleted at this point. Amid these 10 variables, "survival" is clearly the target and the rest 9 variables are all features. So I had 10 features at the time (2020/05) I did this project. 
 
 ### 6-2 Missing Value Imputation
 ```R
@@ -75,7 +76,7 @@ Total 10 features. Through inspecting cross table of the target "survival" and e
 ```R
 table(Survived_train , Titanic$Title[1:891])
 ```
-Again, notice that this feature doesn't exist in Titanic dataset on Kaggle anymore. Yet it existed in 2020/05, the time I carrying out this analysis. According to a resource on Kaggle, I extracted the title of "Name" only. Then, I observed the cross table of "Survival" & "Title", and categorized "Title" as followed:
+Again, notice that this feature doesn't exist in Titanic dataset on Kaggle anymore. Yet it existed in 2020/05, the time I carrying out this project. According to a resource on Kaggle, I extracted the title of "Name" only. Then, I observed the cross table of "Survival" & "Title", and categorized "Title" as followed:
 
 A. "RARE" : "Jonkheer.", "the", "Don.", "Dona.", "Sir.", "Lady.", "Mme."\
 B. "Prof": "Dr.", "Rev.", "Capt.", "Major.", "Col."\
