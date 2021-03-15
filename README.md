@@ -10,7 +10,7 @@ Top 4 % (833/22219) in **[Titanic: Machine Learning from Disaster](https://www.k
 6. Details \
 6-1 Introduction to Features \
 6-2 Missing Value Imputation \
-6-3 Features Transformation \
+6-3 Features Engineering \
 6-4 Feature Extraction \
 6-5 Model Selection 
 
@@ -67,7 +67,7 @@ I imputed 7 features (Sex, Age, SibSp, Parch, Fare, Pclass, Embarked), leaving t
 
 > Actually, I made a mistake called **"data leakage"**, a common mistake in DS & ML projects, while imputing the missing values. I merged the training and test dataset given by Kaggle, then imputing this merged dataset by Random Forest using mice(). I should have imputed the missing values of training and test dataset respectively! This mistake might have caused overfitting.
 
-### 6-3 Features Transformation
+### 6-3 Features Engineering
 
 Total 10 features. Through inspecting cross table of the target "survival" and every feature respectively, I was able to unveil how to split the non-numeric data into categories distinguishable by "survival". As for numeric data, in reality, I tried log transformation and converting numeric data into categorical data, but none of them worked.
 
