@@ -61,6 +61,8 @@ mice.data <- mice(Raw,
                   seed = 188,
                   print=FALSE)     
 ```
+As a prominent procedure among preprocessing, missing values imputation is often put aside though. The reader may check ML23: Handling Missing Values for why addressing missing value properly can be very helpful.
+
 I imputed 7 features (Sex, Age, SibSp, Parch, Fare, Pclass, Embarked), leaving the left 3 features (Name, Ticket, Cabin) remained. "Name" & "Ticket" don't have any missing values but "Cabin" possesses lots of missing values. We will tackle with "Cabin" in 6-3.
 
 Actually, I made mistake called **"data leakage"**, a common mistake in DS & ML projects, while imputing the missing values. I merged the training and test dataset given by Kaggle, then imputing this merged dataset by Random Forest using mice(). I should have imputed the missing values of training and test dataset respectively! This mistake might have caused overfitting.
