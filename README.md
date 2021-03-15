@@ -69,7 +69,7 @@ I imputed 7 features (Sex, Age, SibSp, Parch, Fare, Pclass, Embarked), leaving t
 
 ### 6-3 Features Engineering
 
-Total 10 features. Through inspecting cross table of the target "survival" and every feature respectively, I was able to unveil how to split the non-numeric data into categories distinguishable by "survival". As for numeric data, in reality, I tried log transformation and converting numeric data into categorical data, but none of them worked.
+Total 10 features. Through inspecting cross table of the target "survival" and every feature respectively, I was able to unveil how to split the non-numeric data into categories distinguishable by "survival". As for numeric data, in reality, I've tried log transformation and converting numeric data into categorical data, but none of them worked.
 
 #### 6-3-1 Name
 ```R
