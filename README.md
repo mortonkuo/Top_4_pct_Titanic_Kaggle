@@ -1,6 +1,6 @@
 # Top-4-pct_Titanic_Kaggle
 - Top 4 % (833/22219) in **[Titanic: Machine Learning from Disaster](https://www.kaggle.com/c/titanic)**, an iconic entry-level competition on Kaggle, in 2020/05. This project was ***conducted with R***.
-- This was actually one my assignments of the graduate level course ***"Data Science"*** of CS department in NCCU. In addition, I got ***96 (A+)*** in this course.
+- This was actually one assignment of the graduate level course ***"Data Science"*** of CS department in NCCU. In addition, I got ***96 (A+)*** in this course.
 
 
 ## Outline
