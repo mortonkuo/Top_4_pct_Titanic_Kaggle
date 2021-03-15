@@ -67,7 +67,7 @@ Actually, I made mistake called **"data leakage"**, a common mistake in DS & ML 
 
 ### 6-3 Features Transformation
 
-Total 10 features.
+Total 10 features. Through inspecting cross table of the target "survival" and every feature respectively, I was able to unveil how to split the non-numeric data into categories distinguishable by "survival". As for numeric data, in reality, I tried log transformation and converting numeric data into categorical data, but none of them worked.
 
 #### 6-3-1 Name
 ```R
