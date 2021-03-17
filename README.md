@@ -133,7 +133,7 @@ By obeserving the cross-table, I categorized "Cabin" into 2 category, making NAs
 No change.
 
 ### 6-4 Feature Extraction
-Leveraging stepwise linear regression with higher degree terms & interactions (using *stepwise( )*), I was able to choose a few influential features.
+Leveraging stepwise linear regression with higher-degree terms & interactions (using *stepwise( )*), I was able to choose a few influential features.
 
 I figured that ***this part is probably the reason why I got top 4% ranking merely using one model***, Random Forest, without leveraging stacking. *Adding the interactions into Random Forest*, a quite creative move, might have led to the success.
 
