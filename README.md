@@ -21,6 +21,8 @@
 
 ![titanicLeaderBoard01](Top_4_pct_Titanic_01.png)
 ![titanicLeaderBoard02](Top_4_pct_Titanic_02.png)
+![titanicLeaderBoard01](Top_4_pct_Titanic_05.png)
+![titanicLeaderBoard02](Top_4_pct_Titanic_06.png)
 
 ## 2. Dataset
 
