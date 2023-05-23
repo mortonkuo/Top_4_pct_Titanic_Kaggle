@@ -1,9 +1,8 @@
 # Top-4-pct_Titanic_Kaggle
 ***Adding interactions into Random Forest***
 
-- Top 4 % (833/22219) in **[Titanic: Machine Learning from Disaster](https://www.kaggle.com/c/titanic)**, an iconic entry-level competition on Kaggle, in 2020/05. This mini project was ***conducted with R***.
-- This was actually an assignment of the *graduate level* course ***"Data Science"*** of *department of CS* in NCCU. In addition, I got ***96 (A+)*** in this course.
-
+- Top 4% (833/22219) in **[Titanic: Machine Learning from Disaster](https://www.kaggle.com/c/titanic)**, an iconic entry-level competition on Kaggle, in 2020/05. This mini project was ***conducted with R***.
+- Top 11% (2/19) in the graduate-level course contest for **Data Science** offered by the Department of CS at NCCU. In addition, I got 96 (A+) for this course.
 
 ## Outline
 1. Ranking 
